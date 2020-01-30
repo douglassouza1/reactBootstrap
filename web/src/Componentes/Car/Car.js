@@ -1,50 +1,53 @@
 import React from 'react';
 import {Carousel, } from 'react-bootstrap'
-import cadeirarei from './Img/cadeirarei.jpg'
-import cadeira from './Img/cadeira.png'
-import cadeirasRodas from './Img/cadeirasRodas.jpg'
+import cadeira from '../Img/cadeira.jpg'
+import cadeiras from '../Img/cadeiras.jpg'
+import cadeirasRodas from '../Img/cadeirasRodas.jpg'
+import "./Car.css"
 
 
 // import { Container } from './styles';
 
 export default function Car() {
   return (
-   <Carousel>
+   <div className= "tamanho">  
+   <Carousel >
   <Carousel.Item>
     <img
-      className="d-block w-50"
-      src={cadeirarei}
+     className="d-block w-100"
+    src={cadeira}
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3>MELHORES MODELOS</h3>
+      <p>Os Melhores Modelos Você só encontra aqui !!!</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-50"
+      className="d-block w-100"
       src={cadeirasRodas}
       alt="Third slide"
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3>Sua Sentada è o Nosso Conforto </h3>
+      <p>Quanto mais Você senta mais felizes Ficamos .</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-50"
-      src={cadeira}
+      className="d-block w-100"
+      src={cadeiras}
       alt="Third slide"
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3>Este Sentou Muito</h3>
+      <p>E foi a nossa Alegria</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
+</div> 
   );
 }
